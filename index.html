@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ff652f">
+  <meta name="description" content="QuickBite: tus restaurantes favoritos a la puerta de tu casa. Descubre una nueva forma de pedir comida local.">
+  <title>QuickBite — Tu próximo antojo, a domicilio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="header container">
+    <a class="brand" href="#" aria-label="QuickBite, inicio"><span class="brand-icon" aria-hidden="true">q<span>•</span></span>QuickBite<span class="brand-dot">.</span></a>
+    <nav aria-label="Navegación principal"><a class="nav-link" href="#beneficios">¿Por qué QuickBite?</a><a class="nav-cta" href="#lista">Quiero probarlo <span aria-hidden="true">↗</span></a></nav>
+  </header>
+
+  <main id="contenido">
+    <section class="hero container" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> ALGO RICO ESTÁ POR LLEGAR</p>
+        <h1 id="hero-title">Tus restaurantes favoritos <span>a la puerta de tu casa</span></h1>
+        <p class="intro">Del primer antojo al último bocado. Descubre sabores de tu barrio y disfruta tu próxima comida sin complicaciones.</p>
+        <div class="signup" id="lista">
+          <h2>Tu lugar en la mesa te espera.</h2>
+          <form id="waitlist-form">
+            <label class="sr-only" for="email">Tu correo electrónico</label>
+            <div class="form-row"><input type="email" id="email" name="email" placeholder="Tu correo electrónico" autocomplete="email" required maxlength="254"><button type="submit">Unirme a la lista <span aria-hidden="true">→</span></button></div>
+            <p class="form-note" id="form-status" role="status">Vista de demostración · El formulario aún no envía ni guarda datos.</p>
+          </form>
+        </div>
+        <div class="hero-bottom"><span class="small-star" aria-hidden="true">✳</span><span>Buenos sabores. Cerca de ti.</span><span class="soon">PRÓXIMAMENTE</span></div>
+      </div>
+
+      <div class="hero-art" aria-label="Vista ilustrativa de la aplicación QuickBite">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <span class="art-spark" aria-hidden="true">✳</span>
+        <div class="floating-tag top-tag"><span aria-hidden="true">♥</span> Hecho en tu barrio</div>
+        <div class="phone">
+          <div class="phone-status"><span>9:41</span><span aria-hidden="true">● ▰</span></div>
+          <div class="app-location"><div><span class="app-label">ENTREGAR EN</span><p>Tu casa <span aria-hidden="true">⌄</span></p></div><span class="avatar" aria-hidden="true">Q</span></div>
+          <h2>¿Qué se te<br>antoja hoy?<span> 🍴</span></h2>
+          <div class="app-search"><span aria-hidden="true">⌕</span> Encuentra tu próximo favorito</div>
+          <div class="categories" aria-hidden="true"><span class="selected">🍔 Burgers</span><span>🍕 Pizza</span><span>🥗 Verde</span></div>
+          <div class="food-card">
+            <div class="food-picture"><span class="food-badge">EL ANTOJO DEL DÍA</span><span class="burger" role="img" aria-label="Hamburguesa">🍔</span><span class="food-heart" aria-hidden="true">♡</span></div>
+            <div class="food-info"><div><h3>La burger de la casa</h3><p>Pan doradito. Sabor de barrio.</p></div><span class="food-plus" aria-hidden="true">+</span></div>
+          </div>
+          <div class="app-banner"><span aria-hidden="true">✦</span><div><strong>Lo local sabe mejor.</strong><p>Descubre algo nuevo cerca de ti.</p></div></div>
+          <div class="app-bottom" aria-hidden="true"><span>⌂<small>Inicio</small></span><span>⌕<small>Explorar</small></span><span>♡<small>Favoritos</small></span></div>
+          <div class="home-indicator"></div>
+        </div>
+        <div class="floating-tag bottom-tag"><span class="delivery-icon" aria-hidden="true">↗</span><div>Menos espera.<strong>Más buen provecho.</strong></div></div>
+        <p class="demo-label">UN ADELANTO DE LO QUE VIENE · DISEÑO ILUSTRATIVO</p>
+      </div>
+    </section>
+
+    <section class="benefits" id="beneficios" aria-labelledby="benefits-title">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow">ASÍ DE SIMPLE. ASÍ DE RICO.</p><h2 id="benefits-title">Tu antojo merece algo mejor.</h2></div><p>Estamos preparando una forma más sencilla<br class="desktop-break"> de conectar contigo y con tu barrio.</p></div>
+        <div class="benefit-grid">
+          <article class="benefit-card"><div class="benefit-top"><span class="benefit-icon" aria-hidden="true">↗</span><span class="card-number">01</span></div><h3>Entrega rápida</h3><p>Menos tiempo esperando, más tiempo disfrutando. Porque tu antojo no quiere hacer fila.</p></article>
+          <article class="benefit-card"><div class="benefit-top"><span class="benefit-icon" aria-hidden="true">$</span><span class="card-number">02</span></div><h3>Precios justos</h3><p>Comer rico debería sentirse bien de principio a fin. Nuestra propuesta: precios claros y sin complicaciones.</p></article>
+          <article class="benefit-card"><div class="benefit-top"><span class="benefit-icon" aria-hidden="true">♡</span><span class="card-number">03</span></div><h3>Apoyo a locales</h3><p>Detrás de cada plato hay una historia. Queremos acercarte a los restaurantes que le dan sabor a tu barrio.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer container"><a class="brand" href="#">QuickBite<span class="brand-dot">.</span></a><p>Hecho para los que disfrutan comer bien.</p><small>© <span id="year">2026</span> QuickBite</small></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('waitlist-form').addEventListener('submit', function (event) {
+      event.preventDefault();
+      document.getElementById('form-status').textContent = '¡Gracias por tu interés! Esta es una demo: tu correo no se ha enviado ni guardado. El registro estará disponible al conectar el formulario.';
+    });
+  </script>
+</body>
+</html>
